@@ -25,16 +25,16 @@ public class service {
 	@Autowired
 	productComponentsRepo pcr;
 	
-	
-	public List<Products> getProducts()
-	{
-		return pr.findAll();
-	}
-	
-	public List<ProductComponents> getProductComponents()
-	{
-		return pcr.findAll();
-	}
+//	
+//	public List<Products> getProducts()
+//	{
+//		return pr.findAll();
+//	}
+//	
+//	public List<ProductComponents> getProductComponents()
+//	{
+//		return pcr.findAll();
+//	}
 	
 	public List<Category> getCategories() {
 		

@@ -1,19 +1,20 @@
 package com.naveen.neo4jAccess.Entities;
 
+import org.springframework.data.neo4j.core.schema.GeneratedValue;
 import org.springframework.data.neo4j.core.schema.Id;
 import org.springframework.data.neo4j.core.schema.Node;
 
 @Node
 public class Products {
 	
-	@Id
-	private String id;
+	@Id @GeneratedValue 
+	private Long id;
 	private String name;
 	
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(String productId) {
+	public void setId(Long productId) {
 		this.id = productId;
 	}
 	public void setName(String productName)
