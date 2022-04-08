@@ -36,15 +36,15 @@ public class service {
 //		return pcr.findAll();
 //	}
 	
-	public List<Category> getCategories() {
-		
-		
-		/*
-		 * List<Category> l= new ArrayList<Category>(); l=cr.findAll();
-		 * System.out.println(l.size()); for(Category c:l) { System.out.println(c); }
-		 */
-		return null;//cr.findAll();
-	}
+//	public List<Category> getCategories() {
+//		
+//		
+//		/*
+//		 * List<Category> l= new ArrayList<Category>(); l=cr.findAll();
+//		 * System.out.println(l.size()); for(Category c:l) { System.out.println(c); }
+//		 */
+//		return null;//cr.findAll();
+//	}
 
 //	public Category findOneById(Long id) {
 //		

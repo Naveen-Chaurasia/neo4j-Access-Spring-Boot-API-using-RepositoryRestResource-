@@ -18,36 +18,7 @@ import com.naveen.neo4jAccess.services.service;
 
 @RestController
 public class Controller {
-	
-	@Autowired
-	service s;
-	@Autowired
-	CategoryRepo cr;
-	
-	
-	@GetMapping(value="/categories", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-	List<Category> getAllCategories()
-	{
 		
-		return null;//cr.findAll();
-
-//		List<Category> categories = s.getCategories();
-//		System.out.println("************************************");
-//		return categories;
-
-	}
-//	@GetMapping("/by-name")
-//	Mono<Category> byName(@RequestParam String name) {
-//		
-//		System.out.println(cr.findByName(name));
-//		return cr.findByName(name);
-//	}
-	
-	@GetMapping("/by-id")
-	Optional<Category> byTitle(@RequestParam Long id) {
-		return cr.findById(id);
-	}
-	
 	@GetMapping("/hello")
 	public String hello()
 	{
